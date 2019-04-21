@@ -1,0 +1,66 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+h1 {
+    background: red;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+hr {
+    margin: 20px 0;
+    border-color: rgb(189, 151, 49);
+}
+
+.game {
+    background: blue;
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding: 16px;
+}
+
+.question {
+    margin-bottom: 16px;
+}
+
+.question .question-num {
+    font-size: 28px;
+    margin: 0 5px;
+}
+
+.answers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.field {
+    width: 20%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(100, 100, 156);
+}
+
+.menu {
+    background: green;
+    margin: 32px 0 0 0;
+    text-align: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    border-radius: 8%;
+}
+
+.menu a:hover {
+    background: greenyellow;
+    margin: 0;
+}
