@@ -22,6 +22,7 @@ hr {
     width: 80%;
     margin: auto;
     padding: 16px;
+    position: relative;
 }
 
 .question {
@@ -31,6 +32,7 @@ hr {
 .question .question-num {
     font-size: 28px;
     margin: 0 5px;
+    width: 60px;
 }
 
 .answers {
@@ -38,29 +40,75 @@ hr {
     justify-content: space-around;
 }
 
-.field {
+.option {
     width: 20%;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgb(100, 100, 156);
+    font-size: 44px;
+    cursor: pointer;
+}
+
+@media(max-width: 440px) {
+    .option {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 300px) {
+    .answers {
+        display: block;
+    }
+
+    .option {
+        width: 90%;
+        height: 40px;
+        margin: auto;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(100, 100, 156);
+        font-size: 32px;
+    }
+}
+
+#report {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 60px;
+    right: 0;
+    background: greenyellow;
+    color: blue;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    display: none;
 }
 
 .menu {
     background: green;
     margin: 32px 0 0 0;
     text-align: center;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
 }
 
-.menu a{
+.menu p {
+    width: fit-content;
     text-decoration: none;
     color: white;
     padding: 0;
+    margin: 0;
     border-radius: 8%;
 }
 
-.menu a:hover {
+.menu p:hover {
     background: greenyellow;
-    margin: 0;
 }
