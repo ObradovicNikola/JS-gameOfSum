@@ -51,6 +51,10 @@ hr {
     cursor: pointer;
 }
 
+.option:hover {
+    background: rgb(152, 152, 209);
+}
+
 @media(max-width: 440px) {
     .option {
         font-size: 30px;
